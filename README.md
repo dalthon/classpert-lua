@@ -8,6 +8,7 @@ It is based on Alpine linux and contains:
 * lua (5.4.4)
 * luarocks
 * lpeg
+* luaunit
 
 ## Usage
 

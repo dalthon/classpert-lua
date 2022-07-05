@@ -12,9 +12,11 @@ RUN apk update                                                             && \
     cd                                                                     && \
     rm -rf /tmp/luarocks                                                   && \
     ln -s /usr/bin/lua5.4 /usr/bin/lua                                     && \
-    luarocks install lpeg
+    luarocks install lpeg                                                  && \
+    luarocks install luaunit
 
 ENV PS1="\[\033[01;34m\]\u(classpert)\[\033[0m\] @ \[\033[01;32m\]\W\[\033[0m\] > "
+ENV LUA_PATH "/course/lib/?.lua;/usr/local/share/lua/5.4/?.lua;"
 
 WORKDIR /course
 
