@@ -9,4 +9,7 @@
 --      mult
 --      add
 
+-- (21 - 24) * 2 + 4 = -2
+
 -- b) What arithmetic expression would generate that previous program?
+(21 - 24) * 2 + 4
